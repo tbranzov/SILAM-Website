@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+		<link href="favicon.ico" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/start/jquery-ui-1.10.4.custom.min.css">
+		<link rel="stylesheet" href="css/jquery.bbslider.css">	
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ 
+ </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="container">
+      <!-- Header row-->
+	  <div class="row">
+	        <div class="container" >
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="Close header for more space">&times;</button>
+			<div id="logo" class="pull-left"><img src="./img/fmi_logo.png" ></div>
+			<H1 class="sitetitle">SILAM</H1>
+			<H4>System for Integrated modeLling of Atmospheric coMposition</H4>
+			</div> 
+	  </div>
+      <!-- / Header row-->
+
+	   <!-- NavBar row-->
+	  <div class="row">
+	  <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">SILAM Home</a>
+        </div>
+		
+	  <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Air Quality Forecasts <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+		    <li><a href="http://silam.fmi.fi/" target="_blank">SILAM Project Site</a></li>
+			<li class="divider"></li>		  
+            <li><a href="#">Europe</a></li>
+            <li><a href="#">Northern Europe</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Gulf of Finland</a></li>
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Wild-land Fire Assimilation System<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+		    <li><a href="http://is4fires.fmi.fi/" target="_blank">IS4FIRES Project Site</a></li>
+			<li class="divider"></li>		  
+			<li role="presentation" class="dropdown-header">Europe</li>
+            <li><a href="#">Temperature Anomaly - particulate matter emission estimates</a></li>
+            <li><a href="#">Temperature Anomaly - forecasts for the fire-induced smoke</a></li>
+            <li><a href="#">Fire Radiative Power - particulate matter emission estimates</a></li>
+            <li><a href="#">Fire Radiative Power - forecasts for the fire-induced smoke</a></li>				
+            <li class="divider"></li>
+			<li role="presentation" class="dropdown-header">Finland and Baltic States</li>		
+            <li><a href="#">Fire Radiative Power - particulate matter emission estimates</a></li>			
+          </ul>
+        </li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Natural Allergenic Pollen Forecast<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+		    <li><a href="http://pollen.fmi.fi/" target="_blank">POLLEN Project Site</a></li>
+			<li class="divider"></li>
+			<li role="presentation" class="dropdown-header">Europe, surface</li>
+            <li><a href="#">birch</a></li>
+            <li><a href="#">grass</a></li>
+            <li><a href="#">olive</a></li>
+            <li><a href="#">ragweed</a></li>				
+            <li class="divider"></li>
+			<li role="presentation" class="dropdown-header">Northern Europe, surface</li>
+			<li><a href="#">birch</a></li>
+            <li><a href="#">grass</a></li>
+            <li><a href="#">olive</a></li>
+            <li><a href="#">ragweed</a></li>				
+          </ul>  
+        </li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">eLearning<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+		    <li><a href="http://silam.fmi.fi/doc/SILAM_publication_list_201105.pdf" target="_blank">Model related Scientific Publications</a></li>
+			<li class="divider"></li>
+			<li role="presentation" class="dropdown-header">User Guides</li>
+            <li><a href="http://silam.fmi.fi/doc/SILAM_v4_5_4_userGuide_general.pdf" target="_blank">v. 4.5</a></li>
+            <li><a href="http://silam.fmi.fi/doc/SILAM_v5_userGuide_general.pdf" target="_blank">v. 5.0</a></li>		
+            <li class="divider"></li>
+			<li role="presentation" class="dropdown-header">Structure of the model code</li>
+            <li><a href="http://silam.fmi.fi/doc/flowchart_v.3.5.pdf" target="_blank">v. 3.5</a></li>
+            <li><a href="http://silam.fmi.fi/doc/silam_v5_1_20111024.pdf" target="_blank">v. 5.1</a></li>
+            <li class="divider"></li>
+			<li role="presentation" class="dropdown-header">Lectures and other stuff</li>
+            <li><a href="http://silam.fmi.fi/open_source/SILAM_school/index.htm" target="_blank">SILAM Winter School 2013</a></li>
+            <li><a href="http://silam.fmi.fi/ACM_course/index.htm" target="_blank">Basic course on atmospheric composition modelling</a></li>		
+          </ul>  
+        </li>
+		<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intranet<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+		    <li><a href="https://opsilam.fmi.fi/silam_gui/v4/main_frame.htm" target="_blank">Access via graphical user interface (GUI)</a></li>
+            <li><a href="http://silam.fmi.fi/thredds/catalog.html" target="_blank">All AQ forecasts rolling archive</a></li>
+            <li><a href="http://silam.fmi.fi/new_SILAM_site/internal/internal_main.htm" target="_blank">SILAM internal pages</a></li>			
+          </ul>  
+        </li>			
+      </ul>
+	  </div>
+      </div>
+      </div>
+	  </div>
+<!-- / NavBar row-->
+
+
+
+	<!--  Forecast Row-->  
+	<div class="row">
+	
+	<div class="col-md-8">
+	<div class="panel panel-info">
+			  <div class="panel-heading">
+				<h2 class="panel-title"><span class="glyphicon glyphicon glyphicon-cloud"></span> Forecasted parameter</h2>
+			  </div>
+			  <div class="panel-body">			
+					
+					<div class="slider" style="min-height:752px;">
+					<!--  HERE COMES THE SLIDES-->  
+							
+					</div>
+	
+	
+	</div>
+	</div>
+	</div>
+	
+	<div class="col-md-4">
+		<div class="panel panel-info">
+			  <div class="panel-heading">
+					<h2 class="panel-title"><span class="glyphicon glyphicon glyphicon-tasks"></span> Control panel</h2>
+			  </div>
+			  <div class="panel-body" >
+
+					<label for="parameter">Select parameter:</label>	
+					<p class="btn-group" >
+										<button type="button" class="btn btn-info" id="CO">CO</button>
+										<button type="button" class="btn btn-info" id="NO">NO</button>
+										<button type="button" class="btn btn-info" id="NO2">NO2</button>
+										<button type="button" class="btn btn-info" id="O3">O3</button>
+										<button type="button" class="btn btn-info" id="SO2">SO2</button>
+					</p>			  
+					<p class="btn-group">
+										<button type="button" class="btn btn-info" id="PM10">PM10</button>
+										<button type="button" class="btn btn-info" id="PM25">PM2.5</button>
+					</p>
+					
+					<p>
+					  <label for="height">Select height:</label>
+					  <select id="height" class="form-control">
+						<option value="0" selected="selected">Surface</option>
+						<option value="500">500 m.</option>
+						<option value="1000">1000 m.</option>
+						<option value="3000">3000 m.</option>
+					  </select>
+					</p>
+					
+					<p>
+					  <label for="teritory">Select region:</label>
+					  <select id="teritory" class="form-control">
+						<option value="Europe" selected="selected">Europe</option>
+						<option value="Northern Europe">Northern Europe</option>
+					  </select>
+					</p>
+
+					 <label for="amount">Hour:</label>
+					<p>
+					  <input type="text" id="amount" style="width:80%; text-align:center; border:0; color:#f6931f; font-weight:bold; font-size:5.0em;">
+					</p>					
+	
+			  		<p id="slider"></p>
+					
+					<div class="btn-group">
+										
+										<a href="#" type="button" class="btn btn-success" id="prev"><span class="glyphicon glyphicon-backward"></a>
+										<a href="#" type="button" class="btn btn-success" id="next"><span class="glyphicon glyphicon-forward"></a>
+										<a href="#" type="button" class="btn btn-success" id="pause"><span class="glyphicon glyphicon-pause"></span> </a>
+										<a href="#" type="button" class="btn btn-success" id="play"><span class="glyphicon glyphicon-play"></span> </a>										
+									  
+									  <div class="btn-group">
+										<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+										  Rewind
+										  <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu">
+										  <li><a href="#" id="rewind-72">Rewind to -72</a></li>
+										  <li><a href="#" id="rewind-48">Rewind to -48</a></li>
+										  <li><a href="#" id="rewind-24">Rewind to -24</a></li>
+										  <li><a href="#" id="rewind-0">Rewind to -0</a></li>
+										  <li><a href="#" id="rewind_24">Rewind to +24</a></li>
+										  <li><a href="#" id="rewind_48">Rewind to +48</a></li>
+										  <li><a href="#" id="rewind_72">Rewind to +72</a></li>
+										  <li><a href="#" id="rewind_96">Rewind to +96</a></li>										  
+										  </ul>
+									  </div>										
+					</div>
+
+  	
+					
+					
+	
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<!--  / Forecast row--> 
+
+	<!--  Disclaimer row-->   	
+	
+	<div class="row">
+	<div class="col-md-12">	
+	<p class="bg-danger"><strong>Disclaimer:</strong><br/> Current products are created for scientific use only. Neither quality nor completeness of the presented information is guaranteed and the data producers do not accept any responsibility for its correctness and timeliness.<p>
+	</div>
+    </div>
+
+	<!--  / Disclaimer row-->   	
+      <hr>
+
+	  	
+	<!--  Project Abstract row-->	  
+	<div class="row">
+	<div class="col-md-12 ">
+	<div class="geninfo">
+	<h3>General Information</h3>
+
+	<p>The dispersion tools in the SILAM framework allow to choose between the Eulerian and Lagrangian dynamic kernels. The Lagrangian kernel is available until v.4.9, whereas strating from v.4.1 the Eulerian kernel is introduced, based on the advection scheme developed by M.Galperin and complemented with the vertical scheme based on extended resistance-analogy approach.</p>
+
+	<p>The chemico-physical modules allow computations of radioactive pollutants (the model database includes ~500 radioactive nuclides with decay chains, dose rates and doses, basic SOx-NOx-NHx-O3 chemistry; size-segregated aerosol compounds, natural allergenic pollutants, production of sea saltp; and probabilistic estimates of plume dispersion expressed via volume- and area-of-risk. Currently, the operational version of the model is v.4.5 for emergency response and 5.1 for other applications.</p>  
+
+	<p class="text-center"><b>SILAM is an open-code system and free for research applications. Contact us to obtain the model.</b></p>
+	</div>	
+	</div>
+	</div>
+
+<!--  / Project Abstract row-->  
+	
+	<hr>
+	  
+	 <!--  Footer row-->   	
+	  
+      <footer>
+        <p>&copy; <a href="http://ilmatieteenlaitos.fi/" target="_blank">Finnish Meteorological Institute 2014</a></p>
+		 <small> Public site design and development: Todor Branzov, <a href="http://math.bas.bg" target="_blank">Institute of Mathematics and Informatics - Bulgarian Academy of Sciences</a>,</br> June 2014 as part of BG051PO001/3.3-05 "Science and Business" project research visit joint activities </small>
+      </footer>
+	<!--  / Footer row-->   
+  
+
+  </div> <!-- /container -->  
+
+	    <!-- JavaScripts --> 
+	    <script src="js/vendor/jquery-1.11.0.min.js"></script>
+		<script src="js/vendor/jquery.bbslider.js"></script>
+        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script> -->
+        <script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+        <script src="js/main.js"></script>
+		  <script>
+ 
+		  var set_view = ["CO", 0, "Europe", 168, 73] ;
+
+		  $(function() {
+			$( "#slider" ).slider({
+			  range: "min",
+			  min: 0,
+			  max: set_view[3],
+			  value: set_view[4],
+			  slide: function( event, ui ) {
+				$('.slider').bbslider('pause');
+			    $('.slider').bbslider('travel',ui.value);					
+			  }
+			});
+			var show_val = $( "#slider" ).slider( "value" ) - set_view[4] + 1;
+			$( "#amount" ).val( show_val );
+		  });				  
+		  
+		  
+ 		  $(function() {
+			  $('.slider').bbslider({ 
+			  auto:  true,
+			  transition: 'none',
+			  timer: 100,
+			  duration: 200,
+			  page: 73,
+			  loop:  true,
+			  callback: function() {
+			  var show_val = $('.slider').data('pIndex') - set_view[4] + 1;			  
+			  $( "#slider" ).slider( "value", $('.slider').data('pIndex'));
+			  $( "#amount" ).val( show_val );			  
+			  }
+			  });
+		  });			  
+
+
+		  
+	
+
+// CO		
+		$('#CO').click(function(){
+			set_view[0] = "CO";
+			produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(), 1);			
+		});
+// End CO
+
+
+// NO2		
+		$('#NO2').click(function(){
+			set_view[0] = "NO2";		
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+		});
+// End NO2
+
+//O3		
+		$('#O3').click(function(){
+			set_view[0] = "O3";		
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+		});	
+//End O3
+
+// NO		
+		$('#NO').click(function(){
+			set_view[0] = "NO";		
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+		});
+// End NO
+
+// SO2		
+		$('#SO2').click(function(){
+			set_view[0] = "SO2";		
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+		});
+// End SO2
+
+// PM10		
+		$('#PM10').click(function(){
+			set_view[0] = "PM10";		
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+		});
+// End PM10
+
+// PM25		
+		$('#PM25').click(function(){
+			set_view[0] = "PM25";		
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+		});
+// End PM25
+
+	$( "#height" ).change(function() {
+		set_view[1]=$( "#height" ).val();
+		produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+	  })
+	  
+	$( "#teritory" ).change(function() {
+		set_view[2]=$( "#teritory" ).val();
+		produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+	  })	  
+  
+		$('#prev').click(function(e) {
+		  $('.slider').bbslider('prev');
+		  e.preventDefault();
+		});
+		
+		$('#next').click(function(e) {
+		  $('.slider').bbslider('next');
+		  e.preventDefault();
+		});
+
+		$('#play').click(function(e) {
+		  $('.slider').bbslider('play');
+		  e.preventDefault();
+		});
+
+		$('#pause').click(function(e) {
+			$('.slider').bbslider('pause');
+		  e.preventDefault();
+		});
+
+		$('#rewind-72').click(function(e) {
+			$('.slider').bbslider('travel',0);
+		  e.preventDefault();
+		});
+	
+		$('#rewind-48').click(function(e) {
+			$('.slider').bbslider('travel',24);
+		  e.preventDefault();
+		});
+
+		$('#rewind-24').click(function(e) {
+			$('.slider').bbslider('travel',48);
+		  e.preventDefault();
+		});
+
+		$('#rewind-0').click(function(e) {
+			$('.slider').bbslider('travel',72);
+		  e.preventDefault();
+		});
+
+		$('#rewind_24').click(function(e) {
+			$('.slider').bbslider('travel',96);
+		  e.preventDefault();
+		});
+
+		$('#rewind_48').click(function(e) {
+			$('.slider').bbslider('travel',120);
+		  e.preventDefault();
+		});
+
+		$('#rewind_72').click(function(e) {
+			$('.slider').bbslider('travel',144);
+		  e.preventDefault();
+		});
+
+		$('#rewind_96').click(function(e) {
+			$('.slider').bbslider('travel',168);
+		  e.preventDefault();
+		});
+		
+		  </script>			
+    </body>
+</html>
