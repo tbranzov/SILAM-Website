@@ -3,6 +3,26 @@
 				return s.substr(s.length-size);
 		}
 
+		function information_row() {
+				var info_row = "AQ parameter: " + set_view[0] + " . Teritory: " + set_view[2] + ". Height: " + set_view[1]+" m.";
+				return info_row;
+		}		
+
+		
+			// This function is called when all images are loaded
+			function Preload_Callback() {
+				$("#loading").hide();
+				$("#images").show();
+				$('.slider').bbslider('play');				
+			}
+			
+			// This function is called every time an image is loaded. It is being passed 2 parameters:
+			// the number of images loaded so far and the number of total images. This allows you to
+			// calculate a % and show it to the user.
+			function imageLoaded(elementsLoadedCount, totalImagesCount) {
+				var percent = Math.round((elementsLoadedCount / totalImagesCount) * 100);
+				$('#progressbar').progressbar('option', 'value', percent);
+			}
 
 		
 		function generate_imgset(ifirst,ilast,dirname, calc_module, day_dir, meteo_parameter, forecasted_height, region_name, fileext, file_sep, dir_sep) {
@@ -45,18 +65,31 @@
 			var addhtml;
 			var displayset = paramset(meteoparam, forecast_height, region_name);			   	
 			
+			$('.slider').bbslider('pause');	
+			
 			if (imgresponsive==1) {
 				addhtml = ' class="img-responsive" ';
 			} else {
 				addhtml = '';
 			}
 				
-			  $('.slider').empty();
-
+			$('.slider').empty();
 			  
+
+			$("#images").hide();
+			$("#loading").show();
+			$("#progressbar").progressbar({ value: 0 });
+			
 			  for (var i = ifirst; i <= ilast; i++) {
-				$('.slider').append('<div> <img src=" '+ displayset[i] +' " ' + addhtml + '</div>');
+				$('.slider').append('<div> <img src=" '+ displayset[i] +' " ' + addhtml + ' ></div>');
 			  }
+
+			$("#images").find('img').batchImageLoad({
+				loadingCompleteCallback: Preload_Callback,
+				imageLoadedCallback: imageLoaded
+			});
+
+			  $("#slide-info").text(information_row());
 			  
 			  $('.slider').bbslider('update');
 			  $('.slider').bbslider('travel',startpos);	
@@ -145,5 +178,3 @@
 			}
 		
 		}
-
-		

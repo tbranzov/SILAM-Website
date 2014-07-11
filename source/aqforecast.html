@@ -137,13 +137,19 @@
 	
 	<div class="col-md-8">
 	<div class="panel panel-info">
-			  <div class="panel-heading">
-				<h2 class="panel-title"><span class="glyphicon glyphicon glyphicon-cloud"></span> Forecasted parameter</h2>
+			  <div class="panel-heading">	  
+				<h2 class="panel-title" ><span class="glyphicon glyphicon glyphicon-cloud"></span> <span id="slide-info">AQ parameter</span></h2>
 			  </div>
-			  <div class="panel-body">			
+			  <div class="panel-body">
 					
-					<div class="slider" style="min-height:752px;">
-					<!--  HERE COMES THE SLIDES-->  
+					<div id="loading" style="display: none;">
+						<div id="progressbar"></div>
+						<p>Preloading all images for smoother experience...</p>
+					</div>			  
+					
+					<div class="slider" id="images" >
+
+					<!--  HERE COMES THE SLIDES   style="min-height:752px;" -->  
 							
 					</div>
 	
@@ -283,9 +289,12 @@
 		<script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
         <script src="js/main.js"></script>
-		  <script>
+        <script src="js/jquery.batchImageLoad.js"></script>			
+
+		<script>
  
 		  var set_view = ["CO", 0, "Europe", 168, 73] ;
+		  var info_row = information_row();
 
 		  $(function() {
 			$( "#slider" ).slider({
@@ -305,12 +314,13 @@
 		  
  		  $(function() {
 			  $('.slider').bbslider({ 
-			  auto:  true,
+			  auto:  false,
 			  transition: 'none',
 			  timer: 100,
 			  duration: 200,
 			  page: 73,
 			  loop:  true,
+			  autoHeight: false,
 			  callback: function() {
 			  var show_val = $('.slider').data('pIndex') - set_view[4] + 1;			  
 			  $( "#slider" ).slider( "value", $('.slider').data('pIndex'));
@@ -318,15 +328,12 @@
 			  }
 			  });
 		  });			  
-
-
-		  
 	
 
 // CO		
 		$('#CO').click(function(){
 			set_view[0] = "CO";
-			produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(), 1);			
+			produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(), 1);	
 		});
 // End CO
 
