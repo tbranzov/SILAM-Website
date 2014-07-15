@@ -4,10 +4,13 @@
 		}
 
 		function information_row() {
-				var info_row = "AQ parameter: " + set_view[0] + " . Teritory: " + set_view[2] + ". Height: " + set_view[1]+" m.";
+				var info_row = "AQ parameter: " + set_view[0] + " . Region: " + set_view[2] + ". Height: " + set_view[1]+" m.";
 				return info_row;
 		}		
 
+		function load_extfile(filename, target){
+			  $(target).load(filename);		
+		}
 		
 			// This function is called when all images are loaded
 			function Preload_Callback() {
