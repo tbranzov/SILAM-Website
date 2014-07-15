@@ -206,13 +206,9 @@
 
 		<script>
  
-		  var set_view = ["CO", 0, "Europe", 168, 73] ;
+		  var set_view = [GetURLParameter('parameter'), GetURLParameter('height'), GetURLParameter('region'), 168, 73] ;
 		  var info_row = information_row();
 
-		  $(function() {
-		  load_extfile.call(0,"navbar.txt", "#navbar_row");
-		  });
-		  
 		  
 		  $(function() {
 			$( "#slider" ).slider({
@@ -246,7 +242,12 @@
 			  }
 			  });
 		  });			  
-	
+
+		  $(function() {
+			load_extfile.call(0,"navbar.txt", "#navbar_row");
+			produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(), 1);
+			slide_height.call(0,set_view[1]);		  
+		  });		  
 
 // CO		
 		$('#CO').click(function(){

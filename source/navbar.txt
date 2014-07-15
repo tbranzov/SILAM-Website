@@ -15,12 +15,10 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Air Quality Forecasts <b class="caret"></b></a>
           <ul class="dropdown-menu">
-		    <li><a href="http://silam.fmi.fi/" target="_blank">SILAM Project Site</a></li>
+		    <li><a href="http://silam.fmi.fi/" target="_blank">Old SILAM Project Site</a></li>
 			<li class="divider"></li>		  
-            <li><a href="#">Europe</a></li>
-            <li><a href="#">Northern Europe</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Gulf of Finland</a></li>
+            <li><a href="http://213.191.194.13/silam/aqforecast.html?parameter=CO&region=Europe&height=0">Europe</a></li>
+            <li><a href="http://213.191.194.13/silam/aqforecast.html?parameter=CO&region=Northern%20Europe&height=0">Northern Europe</a></li>
           </ul>
         </li>
 		<li class="dropdown">
