@@ -147,7 +147,7 @@
 						<p>Preloading all images for smoother experience...</p>
 					</div>			  
 					
-					<div class="slider" id="images" >
+					<div class="slider" id="images" style="min-height:0px;">
 
 					<!--  HERE COMES THE SLIDES   style="min-height:752px;" -->  
 							
@@ -333,7 +333,8 @@
 // CO		
 		$('#CO').click(function(){
 			set_view[0] = "CO";
-			produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(), 1);	
+			produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(), 1);
+			slide_height.call(0,set_view[1]);
 		});
 // End CO
 
@@ -341,53 +342,61 @@
 // NO2		
 		$('#NO2').click(function(){
 			set_view[0] = "NO2";		
-			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+			slide_height.call(0,set_view[1]);			
 		});
 // End NO2
 
 //O3		
 		$('#O3').click(function(){
 			set_view[0] = "O3";		
-			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+			slide_height.call(0,set_view[1]);			
 		});	
 //End O3
 
 // NO		
 		$('#NO').click(function(){
 			set_view[0] = "NO";		
-			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+			slide_height.call(0,set_view[1]);			
 		});
 // End NO
 
 // SO2		
 		$('#SO2').click(function(){
 			set_view[0] = "SO2";		
-			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+			slide_height.call(0,set_view[1]);			
 		});
 // End SO2
 
 // PM10		
 		$('#PM10').click(function(){
 			set_view[0] = "PM10";		
-			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+			slide_height.call(0,set_view[1]);			
 		});
 // End PM10
 
 // PM25		
 		$('#PM25').click(function(){
 			set_view[0] = "PM25";		
-			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);			
+			produce_slides.call(0,0,168,$('#slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+			slide_height.call(0,set_view[1]);			
 		});
 // End PM25
 
 	$( "#height" ).change(function() {
 		set_view[1]=$( "#height" ).val();
 		produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+		slide_height.call(0,set_view[1]);
 	  })
 	  
 	$( "#teritory" ).change(function() {
 		set_view[2]=$( "#teritory" ).val();
 		produce_slides.call(0,0,168,$('.slider').data('pIndex'),set_view[0],$( "#height" ).val(),$( "#teritory" ).val(),1);
+		slide_height.call(0,set_view[1]);
 	  })	  
   
 		$('#prev').click(function(e) {

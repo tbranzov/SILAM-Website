@@ -88,10 +88,7 @@
 				loadingCompleteCallback: Preload_Callback,
 				imageLoadedCallback: imageLoaded
 			});
-
-			  var imgheight = $(".slider_img").height();
-			  //$("#images").add('style="min-height:'+imgheight+'px;"');
-			  
+	  
 			  
 			  $("#slide-info").text(information_row());
 			  
@@ -100,7 +97,13 @@
 		}	
 	
 
-
+		function slide_height(sldhght){
+		var slide_min_height = "min-height:750px;";
+		if (sldhght!="0") {  
+			slide_min_height = "min-height:500px;";
+		}
+		  $("#images").attr("style",slide_min_height);
+		}		
 	
 			
 		function paramset(paramid, forecast_height, region_name) {
